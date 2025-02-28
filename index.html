@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Mubarak - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #007BFF;
+        }
+        .job-date {
+            font-style: italic;
+            color: #666;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .skill-box {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,53 +93,45 @@
         <h2>Education</h2>
         <p><b>McMaster University</b> (Sept 2021 - Dec 2025)</p>
         <p>Bachelor of Automation Engineering Technology | Dean’s Honour List</p>
-        <p>• Advanced Diploma in Chemical Engineering</p>
-        <p>• Business Management Certificate (ACBSP ACCREDITED)</p>
+        <p>Advanced Diploma in Chemical Engineering</p>
+        <p>Business Management Certificate (ACBSP ACCREDITED)</p>
     </section>
 
     <section id="experience">
         <h2>Work Experience</h2>
-        <h3>Control Systems Design Engineer (Midwest Canada Services) (Nov 2024 - Present)</h3>
-        <ul>
-            <li>Designed and implemented control systems using Siemens S7-1200, S7-1500, and LOGO! PLCs for HVAC, water treatment, and industrial automation.</li>
-            <li>Developed HMI interfaces using Siemens WinCC for real-time system monitoring and manual control.</li>
-            <li>Designed energy-efficient control systems for Marriott Hotel’s dual air compressors, reducing energy consumption by 15%.</li>
-        </ul>
+        <p class="job-title">Control Systems Design Engineer | Midwest Canada Services</p>
+        <p class="job-date">Nov 2024 - Present</p>
+        <p>Developing and implementing control systems using Siemens PLCs for HVAC, water treatment, and industrial automation. Designed an energy-efficient air compressor control system, reducing energy consumption by 15%.</p>
         
-        <h3>Controls Field Engineer (GE Vernova) (Jan 2024 - Sept 2024)</h3>
-        <ul>
-            <li>Developed an HMI system using Cimplicity for Goreway Power Station.</li>
-            <li>Calibrated pressure transmitters, flow sensors, and level instrumentation for accurate readings.</li>
-            <li>Installed and troubleshot industrial sensors and control loops.</li>
-        </ul>
-
-        <h3>Automation LAB Research Assistant (McMaster University) (Sept 2024 - Present)</h3>
-        <ul>
-            <li>Designed an RC car platform with smart sensors for real-time autonomous vehicle simulation.</li>
-            <li>Programmed an automated painting station using Siemens S7-1200 PLC.</li>
-        </ul>
+        <p class="job-title">Controls Field Engineer | GE Vernova</p>
+        <p class="job-date">Jan 2024 - Sept 2024</p>
+        <p>Designed an HMI system for Goreway Power Station, enhancing real-time monitoring and control. Performed sensor calibration and troubleshooting of industrial control loops.</p>
+        
+        <p class="job-title">Automation LAB Research Assistant | McMaster University</p>
+        <p class="job-date">Sept 2024 - Present</p>
+        <p>Developed an autonomous RC car with integrated sensors for real-time data analysis and programmed an automated painting station using Siemens S7-1200 PLC.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <h3>Automated Bottle Filling System</h3>
+        <p class="job-title">Automated Bottle Filling System</p>
         <p>Designed a PLC-based system using Allen Bradley PLC, sensors, and servo motors for accurate liquid dispensing.</p>
         
-        <h3>Marriott Hotel PLC Control</h3>
+        <p class="job-title">Marriott Hotel PLC Control</p>
         <p>Developed Siemens LOGO! PLC-based control for air compressors, optimizing energy efficiency.</p>
         
-        <h3>Three-Level Elevator System</h3>
+        <p class="job-title">Three-Level Elevator System</p>
         <p>Built an FPGA-based digital control project for an elevator system using Verilog and a motor driver.</p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li><b>Automation Systems:</b> Allen-Bradley RSLogix/Studio 5000, Siemens PLCs (LOGO!, S7-1200/1500), SCADA (Cimplicity, Ignition, WinCC).</li>
-            <li><b>Programming:</b> Python, C/C++, MATLAB, Verilog, Simulink, HTML.</li>
-            <li><b>Engineering & Design:</b> AutoCAD Electrical, EPLAN, SolidWorks, Fusion 360.</li>
-            <li><b>Industrial Expertise:</b> PROFINET, Modbus TCP/IP, DeviceNet, PROFIBUS, Ethernet/IP.</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill-box">Automation: Allen-Bradley, Siemens PLCs, SCADA</div>
+            <div class="skill-box">Programming: Python, C/C++, MATLAB, Verilog</div>
+            <div class="skill-box">Engineering: AutoCAD Electrical, EPLAN, SolidWorks</div>
+            <div class="skill-box">Networking: PROFINET, Modbus, DeviceNet</div>
+        </div>
     </section>
 
     <section id="contact">
@@ -90,4 +144,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
